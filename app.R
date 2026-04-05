@@ -34,8 +34,8 @@ locs <- list(
     name      = "The Point on Wall Lake",
     lat       = 42.52055, lng = -85.38935,
     haiku     = c("Chicken Dude wades in",
-                  "Easter haunts the shallow tip",
-                  "Summer never ends"),
+                  "Within bouys, a shallow tip",
+                  "Centerboards beware"),
     hints     = c(
       "This is a shallow part of the same lake as Clue 1.",
       "A legendary character known as the Chicken Dude is said to wade here in summer — and so does a certain Easter bunny.",
@@ -63,7 +63,7 @@ locs <- list(
     lat       = 42.25917, lng = -85.53111,
     haiku     = c("Sprinkle lights the sign",
                   "Roundabouts loop twice, then straight",
-                  "Sweet name marks the turn"),
+                  "Interstate junction"),
     hints     = c(
       "This is a highway exit in Michigan on the route to the lake house.",
       "At this exit, roads spin in circles — roundabouts — before you continue on your way toward the lake.",
@@ -83,7 +83,7 @@ locs <- list(
       "Peaches and apples purchased here are later dried by the parents and turned into sweet snacks for you.",
       "The key word, scrambled:"
     ),
-    scrambled = "SCEAHPE", letter = "C",
+    scrambled = "UIRFT SRECA", letter = "C",
     view_lat  = 42.17, view_lng = -86.31, view_zoom = 12, tolerance = 2000
   ),
   list(
@@ -97,15 +97,15 @@ locs <- list(
       "No cars are allowed on this island. People travel by bicycle and horse. A famous bridge shares its name, and grandparents can see it from their porch.",
       "The key word, scrambled:"
     ),
-    scrambled = "DALNIS", letter = "L",
+    scrambled = "ICKACAMN", letter = "L",
     view_lat  = 46.0, view_lng = -84.5, view_zoom = 9, tolerance = 3000
   ),
   list(
     name      = "Piestewa Peak, Phoenix",
     lat       = 33.54821, lng = -112.01956,
-    haiku     = c("She climbed before all",
-                  "Desert honors her bright name",
-                  "Summit bears her flag"),
+    haiku     = c("A rugged, desert climb",
+                  "Honors soldier the summit name",
+                  "Step among the schist"),
     hints     = c(
       "This summit is in a desert city in the American Southwest.",
       "Near your Auntie's house in Phoenix, this peak was renamed to honor a Native American soldier — the first American woman to die in combat in the Iraq War.",
@@ -118,7 +118,7 @@ locs <- list(
     name      = "Georgioupoli, Crete",
     lat       = 35.36125, lng = 24.26127,
     haiku     = c("Blue water shimmers",
-                  "Ancient island holds your laugh",
+                  "Ancient island, family origins",
                   "Together you swam"),
     hints     = c(
       "This location is on a Mediterranean island that belongs to Greece.",
@@ -131,21 +131,21 @@ locs <- list(
   list(
     name      = "Sufi Bari, Bangladesh",
     lat       = 24.12076, lng = 90.49312,
-    haiku     = c("Your name marks the land",
-                  "Far past Dhaka, kin await",
+    haiku     = c("Surname marks the land",
+                  "Near capital, kin await",
                   "Roots run deep as wells"),
     hints     = c(
       "This place is in South Asia, not far from a major capital city.",
       "Look closely at the name of this location — your own family surname is part of it. Some of you have recently made the long journey here.",
       "The key word, scrambled:"
     ),
-    scrambled = "ADKAH", letter = "E",
+    scrambled = "IFUS RABI", letter = "E",
     view_lat  = 23.8, view_lng = 90.4, view_zoom = 9, tolerance = 15000
   ),
   list(
     name      = "Intercultural Montessori",
     lat       = 41.88342, lng = -87.78530,
-    haiku     = c("Worlds apart, one room",
+    haiku     = c("Worlds converge, one room",
                   "Ten years past, your paths first crossed",
                   "Friendship found its home"),
     hints     = c(
@@ -153,7 +153,7 @@ locs <- list(
       "More than ten years ago, all of you were students here at the same time. This is where your friendships first began.",
       "The key word, scrambled:"
     ),
-    scrambled = "OHCLSO", letter = "T",
+    scrambled = "", letter = "T",
     view_lat  = 41.89, view_lng = -87.72, view_zoom = 12, tolerance = 1500
   )
 )
