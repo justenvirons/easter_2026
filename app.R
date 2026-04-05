@@ -1,5 +1,6 @@
 library(shiny)
 library(leaflet)
+library(leaflet.extras)
 library(shinyjs)
 
 # ── Haversine distance (meters) ───────────────────────────────────────────────
@@ -360,8 +361,15 @@ server <- function(input, output, session) {
     req(rv$page >= 1, rv$page <= 10)
     loc <- locs[[rv$page]]
     leaflet(options = leafletOptions(zoomControl = TRUE)) |>
-      addProviderTiles(providers$CartoDB.Positron) |>
-      setView(lng = loc$view_lng, lat = loc$view_lat, zoom = loc$view_zoom)
+      addProviderTiles(providers$OpenStreetMap.Mapnik) |>
+      setView(lng = loc$view_lng, lat = loc$view_lat, zoom = loc$view_zoom) |>
+      addSearchOSM(options = searchOptions(
+        autoCollapse = FALSE,
+        minLength    = 2,
+        zoom         = 14,
+        collapsed    = FALSE,
+        position     = "topleft"
+      ))
   })
   
   observe({
