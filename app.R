@@ -372,14 +372,12 @@ server <- function(input, output, session) {
   # Must be called after output$clue_map is defined
   outputOptions(output, "clue_map", suspendWhenHidden = FALSE)
 
-  # Re-centre map and clear markers when page advances
+  # Clear markers when page advances — map stays at Wall Lake for every clue
   observeEvent(rv$page, {
     req(rv$page >= 1, rv$page <= 10)
-    loc <- locs[[rv$page]]
     leafletProxy("clue_map") |>
       clearMarkers() |>
-      clearShapes() |>
-      setView(lng = loc$view_lng, lat = loc$view_lat, zoom = loc$view_zoom)
+      clearShapes()
   })
 
   # Enable/disable Check button
