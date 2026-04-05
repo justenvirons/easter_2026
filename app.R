@@ -181,7 +181,7 @@ ui <- fluidPage(
         h1(class = "hunt-title", "The World Egg Hunt"),
         h2(class = "hunt-year",  "Easter 2026"),
         div(class = "rabbit-frame",
-          tags$img(src = "rabbit.jpg", alt = "The Easter Rabbit",
+          tags$img(src = "images/rabbit.png", alt = "The Easter Rabbit",
                    class = "rabbit-img",
                    onerror = "this.style.display='none';
                      document.getElementById('rabbit-fallback').style.display='block';")
