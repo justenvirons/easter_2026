@@ -179,10 +179,10 @@ ui <- fluidPage(
   div(id = "section_landing",
     div(class = "landing-wrap",
       div(class = "landing-card",
-        h1(class = "hunt-title", "The World Egg Hunt"),
-        h2(class = "hunt-year",  "Easter 2026"),
+        h1(class = "hunt-title", "Wall Lake and Beyond"),
+        h2(class = "hunt-year",  "Easter Egg Hunt 2026"),
         div(class = "rabbit-frame",
-          tags$img(src = "images/rabbit.png", alt = "The Easter Rabbit",
+          tags$img(src = "images/rabbit.png", alt = "Deconstructed Easter Rabbit",
                    class = "rabbit-img",
                    onerror = "this.style.display='none';
                      document.getElementById('rabbit-fallback').style.display='block';")
@@ -192,7 +192,7 @@ ui <- fluidPage(
         ),
         div(class = "landing-blurb",
           p("Somewhere in this world your Easter baskets are waiting."),
-          p("But first — prove you know the places that shaped your friendships."),
+          p("But first, show you know the places that shaped your friendships."),
           p("Near lakes and distant shores, classroom halls and desert peaks."),
           tags$em("Ten clues. Ten places. Can you find them all?")
         ),
@@ -235,7 +235,7 @@ ui <- fluidPage(
         div(class = "final-card",
           h1(class = "final-title", "\U0001F95A  All Ten Found!"),
           p(class = "final-intro",
-            "You've traveled the world — from Wall Lake to Wall Lake by way of three ",
+            "You've traveled the world — from Wall Lake to Oak Park by way of three ",
             "continents. Now unscramble these ten letters to find where your Easter ",
             "baskets are hidden:"),
           div(class = "letter-row",
