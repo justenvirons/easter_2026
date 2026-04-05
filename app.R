@@ -267,9 +267,6 @@ server <- function(input, output, session) {
     letters     = character(0)
   )
 
-  # Render map even while section is hidden so it's ready on first show
-  outputOptions(output, "clue_map", suspendWhenHidden = FALSE)
-
   # ── Section visibility ───────────────────────────────────────────────────────
   observeEvent(rv$page, {
     shinyjs::toggle("section_landing", condition = rv$page == 0)
@@ -372,6 +369,8 @@ server <- function(input, output, session) {
         zoom = 14, collapsed = FALSE, position = "topleft"
       ))
   })
+  # Must be called after output$clue_map is defined
+  outputOptions(output, "clue_map", suspendWhenHidden = FALSE)
 
   # Re-centre map and clear markers when page advances
   observeEvent(rv$page, {
