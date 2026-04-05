@@ -2,6 +2,7 @@ library(shiny)
 library(leaflet)
 library(leaflet.extras)
 library(shinyjs)
+library(rsconnect)
 
 # ── Haversine distance (meters) ───────────────────────────────────────────────
 haversine_m <- function(lat1, lng1, lat2, lng2) {
